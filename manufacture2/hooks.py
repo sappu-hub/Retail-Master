@@ -144,6 +144,11 @@ app_license = "mit"
 # 		"on_trash": "method"
 # 	}
 # }
+doc_events = {
+	"Sales Invoice" : {
+		"on_submit":"manufacture2.manufacture2.custom_script.sales_invoice.validate_selling"
+	}
+}
 
 # Scheduled Tasks
 # ---------------
