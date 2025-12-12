@@ -146,7 +146,8 @@ app_license = "mit"
 # }
 doc_events = {
 	"Sales Invoice" : {
-		"on_submit":"manufacture2.manufacture2.custom_script.sales_invoice.validate_selling"
+		"on_submit":"manufacture2.manufacture2.custom_script.sales_invoice.validate_selling",
+		"validate": "manufacture2.manufacture2.custom_script.sales_invoice.apply_store_warehouse"
 	}
 }
 
@@ -247,3 +248,11 @@ doc_events = {
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+fixtures = [
+    {
+        "dt": "Custom Field",
+        "filters": [
+            ["name", "in", ["Sales Invoice-custom_retail_store"]]
+        ]
+    }
+]
