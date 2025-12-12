@@ -252,7 +252,10 @@ fixtures = [
     {
         "dt": "Custom Field",
         "filters": [
-            ["name", "in", ["Sales Invoice-custom_retail_store"]]
+            ["name", "in", [
+                "Sales Invoice-custom_retail_store",
+                "Stock Entry-custom_retail_store"
+            ]]
         ]
     }
 ]
