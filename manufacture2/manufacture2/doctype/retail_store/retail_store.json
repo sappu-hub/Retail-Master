@@ -6,8 +6,10 @@
  "engine": "InnoDB",
  "field_order": [
   "store_name",
+  "store_code",
   "default_warehouse",
   "cost_center",
+  "store_address",
   "column_break_bbah",
   "company",
   "manager",
@@ -40,8 +42,8 @@
   {
    "fieldname": "manager",
    "fieldtype": "Link",
-   "label": "Manager ",
-   "options": "User"
+   "label": "Store Manager ",
+   "options": "Employee"
   },
   {
    "default": "0",
@@ -52,12 +54,22 @@
   {
    "fieldname": "column_break_bbah",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "store_code",
+   "fieldtype": "Data",
+   "label": "Store Code"
+  },
+  {
+   "fieldname": "store_address",
+   "fieldtype": "Small Text",
+   "label": "Store Address"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-12-10 14:34:28.869108",
+ "modified": "2025-12-12 05:10:32.480130",
  "modified_by": "Administrator",
  "module": "Manufacture2",
  "name": "Retail Store",
