@@ -137,6 +137,10 @@ app_license = "mit"
 # ---------------
 # Hook on document methods and events
 
+doctype_js = {
+    "Sales Invoice": "public/js/sales_invoice.js",
+}
+
 # doc_events = {
 # 	"*": {
 # 		"on_update": "method",
