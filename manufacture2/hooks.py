@@ -151,7 +151,7 @@ doctype_js = {
 doc_events = {
 	"Sales Invoice" : {
 		"on_submit":"manufacture2.manufacture2.custom_script.sales_invoice.validate_selling",
-		"validate": "manufacture2.manufacture2.custom_script.sales_invoice.apply_store_warehouse"
+		"validate": "manufacture2.manufacture2.custom_script.sales_invoice.apply_store_warehouse",
 	}
 }
 
