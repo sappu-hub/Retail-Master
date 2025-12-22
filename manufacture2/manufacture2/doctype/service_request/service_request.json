@@ -14,7 +14,9 @@
   "priority",
   "description",
   "column_break_jrhm",
-  "assign_to"
+  "assign_to",
+  "section_break_tcpu",
+  "tasks"
  ],
  "fields": [
   {
@@ -68,12 +70,22 @@
    "fieldtype": "Link",
    "label": "Assign To",
    "options": "User"
+  },
+  {
+   "fieldname": "section_break_tcpu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "tasks",
+   "fieldtype": "Table",
+   "label": "Tasks",
+   "options": "Service Request Task"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-12-21 06:21:02.471863",
+ "modified": "2025-12-22 05:05:28.115344",
  "modified_by": "Administrator",
  "module": "Manufacture2",
  "name": "Service Request",
